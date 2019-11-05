@@ -9,6 +9,7 @@ cara naruh div
 --section content
 ---div(disini)
 --endsection
-
+###alternatif
+buat/cari template bootstrap edit secara terpisah dari projek sampai hampir sama dengan ui design nya
 kalo udah dan mau di push lagi , bikin branch dulu sesuai nama, ganti branch trus di push
 *note: kalo bisa dan mau
