@@ -10,4 +10,5 @@ cara naruh div
 ---div(disini)
 --endsection
 
+kalo udah dan mau di push lagi , bikin branch dulu sesuai nama, ganti branch trus di push
 *note: kalo bisa dan mau
