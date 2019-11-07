@@ -65,4 +65,11 @@ class InputController extends Controller
         // alihkan halaman ke halaman artist
         return redirect('/input');
     }
+
+    public function utama()
+    {
+        $artist = DB::table('artist')->get();
+
+        return view('main', ['artist' => $artist]);
+    }
 }

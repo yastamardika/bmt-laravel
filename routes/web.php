@@ -11,13 +11,15 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
-Route::get('/', function () {
-    return view('main');
-});
-
+// Route::get('/', function () {
+//     return view('main');
+// });
+Route::get('/','InputController@utama');
 Route::get('/input','InputController@index');
 Route::get('/input/tambah','InputController@tambah');
 Route::post('/input/store','InputController@store');
