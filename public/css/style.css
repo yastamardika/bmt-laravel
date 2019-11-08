@@ -1138,6 +1138,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq #faq-list p {
   margin-bottom: 20px;
+  color: white;
 }
 
 #faq #faq-list a.collapse {
@@ -1145,7 +1146,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list a.collapsed {
-  color: #000;
+  color: white;
 }
 
 #faq #faq-list a.collapsed i::before {
