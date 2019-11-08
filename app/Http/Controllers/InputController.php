@@ -4,16 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use App\Talent;
 
 class InputController extends Controller
 {
     public function index()
     {
-
-        $artist = Talent::get();
-
-        return view('index', ['artist' => $artist]);
+        if(Auth::check()){
+            $artist = Talent::get();
+            return view('index', ['artist' => $artist]);
+        } else {
+            return redirect()->action('HomeController@index');
+        }
     }
 
     // method untuk menampilkan view form tambah artist
@@ -66,5 +69,10 @@ class InputController extends Controller
         return redirect('/input');
     }
 
-
+    public function cek()
+    {
+        if(!Auth::check()){
+            return redirect()->action('HomeController@index');
+        }
+    }
 }
