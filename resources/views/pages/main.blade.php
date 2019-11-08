@@ -9,7 +9,7 @@
         <a href="#about" class="about-btn scrollto">About The Event</a>
     </div>
 </section>
-<section id="speakers" class="wow fadeInUp">
+<section id="speakers" class="wow fadeInUp" style="background-color:black">
     <div class="container">
         <div class="section-header">
             <h2>Latest artist</h2>
@@ -40,7 +40,7 @@
     </div>
 
 </section>
-<section id="gallery" class="wow fadeInUp">
+<section id="gallery" class="wow fadeInUp" style="background-color:black">
 
     <div class="container">
         <div class="section-header">

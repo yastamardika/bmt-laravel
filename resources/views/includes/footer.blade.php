@@ -7,7 +7,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-info">
-                    <img src="{{URL::asset('/img/LOGO-02-02.png')}}" alt="TheEvenet" style="width:100%;height:100%">
+                   <a href="/"><img src="{{URL::asset('/img/LOGO-02-02.png')}}" alt="TheEvenet" style="width:100%;height:100%"></a>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
