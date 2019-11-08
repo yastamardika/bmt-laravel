@@ -19,7 +19,7 @@ Route::get('/welcome', function () {
 // Route::get('/', function () {
 //     return view('main');
 // });
-Route::get('/','InputController@utama');
+Route::get('/','FrontController@utama');
 Route::get('/input','InputController@index');
 Route::get('/input/tambah','InputController@tambah');
 Route::post('/input/store','InputController@store');
@@ -27,11 +27,17 @@ Route::get('/input/edit/{id}','InputController@edit');
 Route::get('/input/hapus/{id}','InputController@hapus');
 
 Route::get('/category',function(){
-    return view('category');
+    return view('pages.category');
 });
-Route::get('/category/list/detail/{id}','InputController@detail');
+Route::get('/addyourtalent',function(){
+    return view('pages.addTalent');
+});
+Route::get('/pages.category/list/detail/{id}','InputController@detail');
 
-Route::get('/category/list',function(){
+Route::get('/about',function(){
+    return view('pages.about');
+});
+Route::get('/pages.category/list',function(){
     return view('list');
 });
 Route::get('/detail', function(){

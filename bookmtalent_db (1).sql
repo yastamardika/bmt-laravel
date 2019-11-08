@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2019 at 07:19 AM
+-- Generation Time: Nov 08, 2019 at 09:33 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -46,7 +46,6 @@ CREATE TABLE `artist` (
 --
 
 INSERT INTO `artist` (`id`, `nama_artist`, `kategori`, `nama_owner`, `deskripsi`, `foto`, `nomor_telepon`, `alamat`, `created_at`, `updated_at`) VALUES
-(3, 'Legong', 'Dance', 'Kadek Ayu', 'Legong adalah tarian klasik Bali yang memiliki pembendaharaan gerak yang sangat kompleks yang terikat dengan struktur tabuh pengiring', 'LOGO-02-01.png', '085266889900', 'Jl.malana no 10 jawa timur', '2019-11-04 07:40:24', '0000-00-00 00:00:00'),
 (23, 'Wayang Orang', 'Drama', 'Andri Agus Jatmiko', 'seni pertunjukan berupa drama yang khas.yangmenggambarkan bukan hanya mengenai manusia, tapi kehidupan manusia dalam kaitannya dengan manusia lain, alam, dan Tuhan.', '1572930700_image10.png', '087657980978', 'Jl.cendrawasih no 5 jakarta selatan', '2019-11-04 22:11:40', '2019-11-04 22:11:40'),
 (24, 'Nws group', 'Music', 'Adh Dhuka', 'Group music yang didirikan tahun 2018 di jogja yang biasa mengisi event seperti pernikahan', '1572930776_image3.png', '085366554433', 'Jl.sitisoyo no 56 pogung baru jogjakarta', '2019-11-04 22:12:56', '2019-11-04 22:12:56'),
 (25, 'Tari lilin', 'Dance', 'Hayati', 'tarian ini terdiri dari beberapa orang yang menggunkan piring kecil yang terdapat sebuah lilin yang sedang menyala di tengahnya sebagai properti tarian ini. Tari lilin ini dilakukan dengan sangat hati hati agar pring yang menjadi tempat meletakkan lilin tidak terjatuh dan agar lilin yang di bawa oleh sang penari tidak mudah', '1572930818_image2.png', '089996578908', 'Jl.moh hatta belakang balok no 89 Bukittinggi', '2019-11-04 22:13:38', '2019-11-04 22:13:38'),
@@ -139,6 +138,13 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Rattyasta Mardika', 'rattyasta1@gmail.com', NULL, '$2y$10$L/5jUgdSW33UapQhIrRQlONEAPbqsoy9DwSa.DZuc4nfiymsRjjFq', NULL, '2019-11-07 22:41:40', '2019-11-07 22:41:40');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -211,7 +217,7 @@ ALTER TABLE `talent`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

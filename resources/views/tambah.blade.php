@@ -40,7 +40,7 @@
 <div id="content-wrapper">
 
     <div class="container-fluid">
-        <h1>tambah artist baru</h1>
+        <h1>Tambah Artist Baru</h1>
 
         <a href="/input"> Kembali</a>
 
@@ -49,17 +49,53 @@
 
         <form action="/input/store" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
-            Nama <br> <input type="text" name="nama" required="required"> <br />
-            Kategori <br><input type="text" name="kategori" required="required"> <br />
-            Owner <br><input type="text" name="owner" required="required"> <br />
-            Deskripsi <br><textarea type="text" name="deskripsi" required="required"> </textarea> <br />
-            Nomor Telepon <br><input type="text" name="handphone" required="required"> <br />
-            Alamat <br><textarea name="alamat" required="required"></textarea> <br />
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="nama" required="required"> <br />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="sel1"  class="col-sm-2 col-form-label" >Kategori</label>
+                <div class="col-sm-10">
+                <select class="custom-select mr-sm-2" name="kategori" required="required"  id="inlineFormCustomSelect">
+                    <option selected>Pilih</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Music">Music</option>
+                    <option value="Dance">Dance</option>
+                    <option value="Mix Art">Mix Art</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Deskripsi</label>
+                <div class="col-sm-10">
+                    <textarea name="deskripsi" class="form-control" required="required"></textarea> <br />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Nomor Telepon</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="handphone" required="required" maxlength="15">
+                    <br />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Alamat</label>
+                <div class="col-sm-10">
+                    <textarea name="alamat" class="form-control" required="required"></textarea> <br />
+                </div>
+            </div>
             <div class="form-group">
                 <label for="exampleFormControlFile1">Foto</label>
                 <input type="file" class="form-control-file" name="foto" id="exampleFormControlFile1">
             </div>
-            <input type="submit" value="Simpan Data">
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="submit" class="btn btn-primary" value="Simpan Data">
+                </div>
+            </div>
         </form>
         <link href="css/sb-admin.css" rel="stylesheet">
         @endsection

@@ -1,5 +1,14 @@
 @extends('layouts.front')
 @section('konten')
+<section id="intro">
+    <div class="intro-container wow fadeIn">
+        <h1 class="mb-4 pb-0">The Annual<br><span>Marketing</span> Conference</h1>
+        <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
+        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        <a href="#about" class="about-btn scrollto">About The Event</a>
+    </div>
+</section>
 <section id="speakers" class="wow fadeInUp">
     <div class="container">
         <div class="section-header">
@@ -31,14 +40,25 @@
     </div>
 
 </section>
+<section id="gallery" class="wow fadeInUp">
 
-<div class="pl-5">
-    <h3 style="color:#DBA053"> Latest Update</h3>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js">
+    <div class="container">
+        <div class="section-header">
+            <h2>Gallery</h2>
+            <p>Check our gallery from the recent events</p>
+        </div>
+    </div>
+
+    <div class="owl-carousel gallery-carousel">
+        @foreach ($artist as $p)
+        <a href="{{ url('/data_file/'.$p->foto) }}" class="venobox" data-gall="gallery-carousel"><img
+                src="{{ url('/data_file/'.$p->foto) }}" alt=""></a>
+        @endforeach
+    </div>
+
+
+
+</section>
 
 <br>
 <br>

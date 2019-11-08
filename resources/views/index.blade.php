@@ -47,10 +47,10 @@
             <br />
             <br />
 
-            <table border="1">
-                <tr>
+            <table class="table-striped">
+                <tr style="text-align:center;font-family:sans-serif">
                     <th>Nama</th>
-                    <th>kategori</th>
+                    <th>Kategori</th>
                     <th>Owner</th>
                     <th>Deskripsi</th>
                     <th>Foto</th>
