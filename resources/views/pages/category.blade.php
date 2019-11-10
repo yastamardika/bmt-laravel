@@ -10,7 +10,7 @@
         <a href="#about" class="about-btn scrollto">Discover More</a>
     </div>
 </section>
-<section id="venue" class="wow fadeInUp">
+<section id="venue" class="wow fadeInUp" style="background-color:black">
 
     <div class="container-fluid">
 

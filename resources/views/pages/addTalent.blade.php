@@ -2,78 +2,86 @@
 @section('konten')
 <section id="intro">
     <div class="intro-container wow fadeIn">
-        <h1 class="mb-4 pb-0">The Annual<br><span>Marketing</span> Conference</h1>
-        <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-            data-autoplay="true"></a>
-        <a href="#about" class="about-btn scrollto">About The Event</a>
+        <h1 class="mb-4 pb-0">We're Always Welcoming everyone who want post their talented skills here 24/7!</h1>
+        <a href="#contact" class="about-btn scrollto">Post Your Talent</a>
     </div>
 </section>
 <section id="contact" class="section-bg wow fadeInUp">
 
-        <div class="container">
+    <div class="container">
 
-          <div class="section-header">
-            <h2>Contact Us</h2>
-            <p>Nihil officia ut sint molestiae tenetur.</p>
-          </div>
+        <div class="section-header">
+            <h2>Post some information below</h2>
+            <p>we will contact you as soon as possible</p>
+        </div>
 
-          <div class="row contact-info">
-
-            <div class="col-md-4">
-              <div class="contact-address">
-                <i class="ion-ios-location-outline"></i>
-                <h3>Address</h3>
-                <address>A108 Adam Street, NY 535022, USA</address>
-              </div>
-            </div>
+        <div class="row contact-info">
 
             <div class="col-md-4">
-              <div class="contact-phone">
-                <i class="ion-ios-telephone-outline"></i>
-                <h3>Phone Number</h3>
-                <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="contact-email">
-                <i class="ion-ios-email-outline"></i>
-                <h3>Email</h3>
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
+                <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3>Address</h3>
+                    <address>Jalan Aster 20A Pohrubuh</address>
                 </div>
-                <div class="form-group col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3>Phone Number</h3>
+                    <p><a href="tel:+62895368424403">+62 895 368 424 403</a></p>
                 </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@example.com">rattyasta1@gmail.com</a></p>
+                </div>
+            </div>
 
         </div>
-      </section><!-- #contact -->
+
+        <div class="form">
+            <div id="sendmessage">Your message has been sent. We will contact your before 3 x 24 hours!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                            data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                            data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Phone Number"
+                            data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Address"
+                            data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                        data-msg="Please tell us about your talent" placeholder="Please tell us about your talent"></textarea>
+                    <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+        </div>
+
+    </div>
+</section><!-- #contact -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
@@ -83,3 +91,6 @@
 <br>
 <br>
 @endsection
+<script>
+
+</script>

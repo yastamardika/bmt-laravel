@@ -7,17 +7,17 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-info">
-                    <img src="{{URL::asset('/img/LOGO-02-02.png')}}" alt="TheEvenet" style="width:100%;height:100%">
+                   <a href="/"><img src="{{URL::asset('/img/LOGO-02-02.png')}}" alt="TheEvenet" style="width:100%;height:100%"></a>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>Links</h4>
                     <ul>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="/">Home</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="/about">About us</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="/category">All Artist</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="/addyourtalent">Send Talent Info</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="/">Privacy policy</a></li>
                     </ul>
                 </div>
 
@@ -35,11 +35,11 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h4>Contact Us</h4>
                     <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
+                        Jl Aster 20A Pohrubuh<br>
+                        Sleman, DIY 57141<br>
+                        Indonesia <br>
+                        <strong>Phone:</strong> +62 895 368 424 403<br>
+                        <strong>Email:</strong> rattyasta1@gmail.com<br>
                     </p>
 
                     <div class="social-links">
@@ -75,18 +75,18 @@
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- JavaScript Libraries -->
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/superfish/hoverIntent.js"></script>
-<script src="lib/superfish/superfish.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/venobox/venobox.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="{{ asset('../lib/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('../lib/jquery/jquery-migrate.min.js') }}"></script>
+<script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('lib/easing/easing.min.js') }}"></script>
+<script src="{{ asset('lib/superfish/hoverIntent.js') }}"></script>
+<script src="{{ asset('lib/superfish/superfish.min.js') }}"></script>
+<script src="{{ asset('lib/wow/wow.min.js') }}"></script>
+<script src="{{ asset('lib/venobox/venobox.min.js') }}"></script>
+<script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
 <!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
+<script src="{{ asset('contactform/contactform.js') }}"></script>
 
 <!-- Template Main Javascript File -->
-<script src="js/main.js"></script>
+<script src="{{ asset('../js/main.js') }}"></script>

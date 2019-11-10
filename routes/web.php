@@ -32,7 +32,7 @@ Route::get('/category',function(){
 Route::get('/addyourtalent',function(){
     return view('pages.addTalent');
 });
-Route::get('/pages.category/list/detail/{id}','InputController@detail');
+Route::get('/category/list/detail/{id}','FrontController@detail');
 
 Route::get('/about',function(){
     return view('pages.about');

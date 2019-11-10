@@ -13,4 +13,12 @@ class FrontController extends Controller
 
         return view('pages.main', ['artist' => $artist]);
     }
+
+    public function detail($id)
+    {
+        $artist = DB::table('artist')->where('id', $id)->get();
+        // passing data artist yang didapat ke view edit.blade.php
+        return view('pages.detail', ['artist' => $artist]);
+    }
+
 }
