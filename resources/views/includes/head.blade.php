@@ -22,12 +22,12 @@
 
     <!-- Libraries CSS Files -->
     <link href="{{ asset('lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ asset(URL::'lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('../lib/venobox/venobox.css"rel="stylesheet') }}">
     <link href="{{ asset('../lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
-    <link href="{{ asset(URL::'css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- =======================================================
     Theme Name: TheEvent
