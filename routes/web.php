@@ -37,9 +37,7 @@ Route::get('/category/list/detail/{id}','FrontController@detail');
 Route::get('/about',function(){
     return view('pages.about');
 });
-Route::get('/pages.category/list',function(){
-    return view('list');
-});
+Route::get('/category/{id}','FrontController@listCategory');
 Route::get('/detail', function(){
      return view('detail');
  });
