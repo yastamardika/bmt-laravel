@@ -50,24 +50,30 @@
         <form action="/input/store" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Group </label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name="nama" required="required"> <br />
                 </div>
             </div>
             <div class="form-group row">
-                <label for="sel1"  class="col-sm-2 col-form-label" >Kategori</label>
+                <label for="sel1" class="col-sm-2 col-form-label">Kategori</label>
                 <div class="col-sm-10">
-                <select class="custom-select mr-sm-2" name="kategori" required="required"  id="inlineFormCustomSelect">
-                    <option selected>Pilih</option>
-                    <option value="Drama">Drama</option>
-                    <option value="Music">Music</option>
-                    <option value="Dance">Dance</option>
-                    <option value="Mix Art">Mix Art</option>
-                </select>
+                    <select class="custom-select mr-sm-2" name="kategori" required="required"
+                        id="inlineFormCustomSelect">
+                        <option selected>Pilih</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Music">Music</option>
+                        <option value="Dance">Dance</option>
+                        <option value="Mix Art">Mix Art</option>
+                    </select>
                 </div>
             </div>
-
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Ketua/Owner</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="owner" required="required"> <br />
+                </div>
+            </div>
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Deskripsi</label>
                 <div class="col-sm-10">
