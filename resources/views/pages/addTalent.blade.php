@@ -46,10 +46,11 @@
         <div class="form">
             <div id="sendmessage">Your message has been sent. We will contact your before 3 x 24 hours!</div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form action="/addyourtalent/store" method="post" role="form" class="contactForm" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                        <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name"
                             data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                         <div class="validation"></div>
                     </div>
@@ -61,18 +62,16 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Phone Number"
+                        <input type="text" name="nomorhp" class="form-control" id="name" placeholder="Your Phone Number"
                             data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Address"
-                            data-rule="email" data-msg="Please enter a valid email" />
-                        <div class="validation"></div>
+                        <input type="text" class="form-control" name="kota" placeholder="Your City" />
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    <textarea class="form-control" name="deskripsi" rows="5" data-rule="required"
                         data-msg="Please tell us about your talent" placeholder="Please tell us about your talent"></textarea>
                     <div class="validation"></div>
                 </div>

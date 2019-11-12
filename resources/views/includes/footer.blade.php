@@ -20,7 +20,7 @@
                         <li><i class="fa fa-angle-right"></i> <a href="/">Privacy policy</a></li>
                     </ul>
                 </div>
-
+{{--
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
@@ -30,7 +30,7 @@
                         <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
                         <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
                     </ul>
-                </div>
+                </div> --}}
 
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h4>Contact Us</h4>

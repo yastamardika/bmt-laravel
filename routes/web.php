@@ -32,6 +32,7 @@ Route::get('/category',function(){
 Route::get('/addyourtalent',function(){
     return view('pages.addTalent');
 });
+Route::post('/addyourtalent/store','MemberController@store');
 Route::get('/category/list/detail/{id}','FrontController@detail');
 
 Route::get('/about',function(){
