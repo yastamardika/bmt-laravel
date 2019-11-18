@@ -21,116 +21,69 @@
 
         <div class="row no-gutters">
             <div class="col-lg-6 venue-info" style=" background: url('../img/musc.png');">
-                <div class="row justify-content-center" >
-                    <div class="col-11 col-lg-8">
-                        <h3>Music</h3>
-                        <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                            ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                            Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                <a href="/category/music">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-lg-8">
+                            <h3>Music</h3>
+                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
+                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
+                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-6 venue-info" style="background: url('../img/dram.png');">
-                <div class="row justify-content-center" >
-                    <div class="col-11 col-lg-8">
-                        <h3>Drama</h3>
-                        <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                            ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                            Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                <a href="/category/Drama">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-lg-8">
+                            <h3>Drama</h3>
+                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
+                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
+                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-6 venue-info" style="background: url('../img/danc.png');">
-                <div class="row justify-content-center" >
-                    <div class="col-11 col-lg-8">
-                        <h3>Dance</h3>
-                        <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                            ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                            Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                <a href="/category/dance">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-lg-8">
+                            <h3>Dance</h3>
+                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
+                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
+                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-lg-6 venue-info"  style=" background: url('../img/fdc0.png');">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-lg-8">
-                        <h3>Mix Art</h3>
-                        <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                            ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                            Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+            <div class="col-lg-6 venue-info" style=" background: url('../img/fdc0.png');">
+                <a href="/category/mixart">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-lg-8">
+                            <h3>Mix Art</h3>
+                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
+                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
+                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
         </div>
 
     </div>
- <br>
+    <br>
     <div class="container-fluid venue-gallery-container">
         <div class="row no-gutters">
-
+            @foreach ($artist as $p)
             <div class="col-lg-3 col-md-4">
                 <div class="venue-gallery">
-                    <a href="img/venue-gallery/1.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/1.jpg" alt="" class="img-fluid">
+                    <a href="{{ url('/data_file/'.$p->foto) }}" class="venobox" data-gall="venue-gallery">
+                        <img src="{{ url('/data_file/'.$p->foto) }}" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="venue-gallery">
-                    <a href="img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/2.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="venue-gallery">
-                    <a href="img/venue-gallery/3.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/3.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="venue-gallery">
-                    <a href="img/venue-gallery/4.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/4.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="venue-gallery">
-                    <a href="img/venue-gallery/5.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/5.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="venue-gallery">
-                    <a href="img/venue-gallery/6.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/6.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="venue-gallery">
-                    <a href="img/venue-gallery/7.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/7.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="venue-gallery">
-                    <a href="img/venue-gallery/8.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="img/venue-gallery/8.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div>
+            @endforeach
 
         </div>
     </div>

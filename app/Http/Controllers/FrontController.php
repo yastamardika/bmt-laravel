@@ -28,5 +28,6 @@ class FrontController extends Controller
 
     public function category(){
         $artist = DB::table('artist')->limit(8)->get();
+        return view('pages.category', ['artist' => $artist]);
     }
 }

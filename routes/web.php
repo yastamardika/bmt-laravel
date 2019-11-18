@@ -26,9 +26,7 @@ Route::post('/input/store','InputController@store');
 Route::get('/input/edit/{id}','InputController@edit');
 Route::get('/input/hapus/{id}','InputController@hapus');
 
-Route::get('/category',function(){
-    return view('pages.category');
-});
+Route::get('/category','FrontController@category');
 Route::get('/addyourtalent',function(){
     return view('pages.addTalent');
 });

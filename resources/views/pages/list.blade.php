@@ -1,30 +1,40 @@
-@extends('layouts.default')
-
-@section('content')
-<div class="" style="padding:10px">
-    <h1>
-        {{ $kategori }}
-    </h1>
+@extends('layouts.front')
+@section('konten')
+<br>
+<section id="speakers" class="wow fadeInUp" style="background-color:black">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-8 col-lg-5">
-                <h6 class="text-muted">List Group with Images</h6>
-                <ul class="list-group text-light">
-
-                    @foreach($artist as $data)
-                    <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color:black; margin-bottom:10px">
-                        <div class="image-parent">
-                            <img src="{{ url('/data_file/'.$data->foto) }}" class="img-fluid" alt="quixote">
-                        </div>
-                        {{ $data->nama_artist }}
-                    </li>
-                    @endforeach
-
-                </ul>
-            </div>
+        <div class="section-header">
+            <h2> {{ $kategori }}</h2>
+            <p>Here are some of our newest artist</p>
         </div>
-        {{ $artist->links() }}
+        @foreach ($artist as $p)
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="speaker"><a href="/category/list/detail/{{ $p->id }}">
+                    <img src="{{ url('/data_file/'.$p->foto) }}" alt="Speaker 1" class="img-fluid"></a>
+                    <div class="details">
+
+                        <div class="social">
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h3><a href="/category/list/detail/{{ $p->id }}">{{ $p->nama_artist }}</a></h3>
+                <p>{{ $p->kategori }}</p>
+                <p>{{ $p->deskripsi }}</p>
+            </div>
+
+
+        </div>
+        @endforeach
     </div>
-</div>
+
+</section>
 <br>
 @endsection
