@@ -10,7 +10,7 @@
                    <a href="/"><img src="{{URL::asset('/img/LOGO-02-02.png')}}" alt="TheEvenet" style="width:100%;height:100%"></a>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-6 col-md-6 footer-links">
                     <h4>Links</h4>
                     <ul>
                         <li><i class="fa fa-angle-right"></i> <a href="/">Home</a></li>

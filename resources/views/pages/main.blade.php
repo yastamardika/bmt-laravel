@@ -1,9 +1,9 @@
 @extends('layouts.front')
 @section('konten')
 <section id="intro">
-    <div class="intro-container wow fadeIn">
+    <div class="intro-container wow fadeIn" id="main">
         <h1 class="mb-4 pb-0">Book<br><span>My</span> Talent</h1>
-        <p class="mb-4 pb-0">Find the best art perfomance for you</p>
+        <p class="mb-4 pb-0">Find the best show perfomance for you</p>
         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
             data-autoplay="true"></a>
         <a href="#speakers" class="about-btn scrollto">Discover More</a>
@@ -23,7 +23,7 @@
                     <img src="{{ url('/data_file/'.$p->foto) }}" alt="Speaker 1" class="img-fluid">
                     <div class="details">
                         <h3><a href="/category/list/detail/{{ $p->id }}">{{ $p->nama_artist }}</a></h3>
-                        <p>Quas alias incidunt</p>
+                        <p>{{ $p->kategori }}</p>
                         <div class="social">
                             <a href=""><i class="fa fa-twitter"></i></a>
                             <a href=""><i class="fa fa-facebook"></i></a>
@@ -45,7 +45,7 @@
     <div class="container">
         <div class="section-header">
             <h2>Gallery</h2>
-            <p>Check our gallery from the recent events</p>
+            <p>Check our gallery from the recent performers</p>
         </div>
     </div>
 

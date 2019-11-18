@@ -20,40 +20,40 @@
         </div>
 
         <div class="row no-gutters">
-            <div class="col-lg-6 venue-info">
-                <div class="row justify-content-center">
+            <div class="col-lg-6 venue-info" style=" background: url('../img/musc.png');">
+                <div class="row justify-content-center" >
                     <div class="col-11 col-lg-8">
-                        <h3>Downtown Conference Center, New York</h3>
+                        <h3>Music</h3>
                         <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
                             ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
                             Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 venue-info">
-                <div class="row justify-content-center">
+            <div class="col-lg-6 venue-info" style="background: url('../img/dram.png');">
+                <div class="row justify-content-center" >
                     <div class="col-11 col-lg-8">
-                        <h3>Downtown Conference Center, New York</h3>
+                        <h3>Drama</h3>
                         <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
                             ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
                             Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 venue-info">
-                <div class="row justify-content-center">
+            <div class="col-lg-6 venue-info" style="background: url('../img/danc.png');">
+                <div class="row justify-content-center" >
                     <div class="col-11 col-lg-8">
-                        <h3>Downtown Conference Center, New York</h3>
+                        <h3>Dance</h3>
                         <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
                             ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
                             Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 venue-info">
+            <div class="col-lg-6 venue-info"  style=" background: url('../img/fdc0.png');">
                 <div class="row justify-content-center">
                     <div class="col-11 col-lg-8">
-                        <h3>Downtown Conference Center, New York</h3>
+                        <h3>Mix Art</h3>
                         <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
                             ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
                             Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
