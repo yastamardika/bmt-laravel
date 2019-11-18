@@ -20,10 +20,13 @@ class FrontController extends Controller
         // passing data artist yang didapat ke view edit.blade.php
         return view('pages.detail', ['artist' => $artist]);
     }
-    
+
     public function listCategory($id){
         $artist = DB::table('artist')->where('kategori',$id)->paginate(10);
-        return view('list', ['artist' => $artist, 'kategori'=>$id]);
+        return view('pages.list', ['artist' => $artist, 'kategori'=>$id]);
     }
 
+    public function category(){
+        $artist = DB::table('artist')->limit(8)->get();
+    }
 }
