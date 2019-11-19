@@ -1,12 +1,16 @@
 @extends('layouts.front')
 @section('konten')
-<section id="intro">
-    <div class="intro-container wow fadeIn" id="main">
-        <h1 class="mb-4 pb-0">Book<br><span>My</span> Talent</h1>
-        <p class="mb-4 pb-0">Find the best show perfomance for you</p>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-            data-autoplay="true"></a>
-        <a href="#speakers" class="about-btn scrollto">Discover More</a>
+<section id="" style="background:url('/img/image2.png'); background-size:cover;height:450px; margin-top:75px">
+    <div id="" class="col-lg-6 col-md-6 offset-md-6 offset-lg-6" style="background:rgba(30, 30, 30, 0.72);padding:24px; height:100%">
+        <h2 style="color:#FFFFFF"><b>Book Now!</b></h2>
+        <br>
+        @foreach($artist2 as $data)
+        <h6 style="line-height:0.001px"><b>{{ $data->kategori }}</b></h6>
+        <hr style="border:0.3px solid #FFFFFF">
+        <h6 style="color:#FFFFFF"><b>{{ $data->nama_artist }}</b></h6>
+        <h6 style="color:#FFFFFF">{{ $data->deskripsi }}</h6>
+        <br>
+        @endforeach
     </div>
 </section>
 <section id="speakers" class="wow fadeInUp" style="background-color:black">
@@ -51,8 +55,7 @@
 
     <div class="owl-carousel gallery-carousel">
         @foreach ($artist as $p)
-        <a href="{{ url('/data_file/'.$p->foto) }}" class="venobox" data-gall="gallery-carousel"><img
-                src="{{ url('/data_file/'.$p->foto) }}" alt=""></a>
+        <a href="{{ url('/data_file/'.$p->foto) }}" class="venobox" data-gall="gallery-carousel"><img src="{{ url('/data_file/'.$p->foto) }}" alt=""></a>
         @endforeach
     </div>
 
