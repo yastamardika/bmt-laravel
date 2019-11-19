@@ -25,9 +25,9 @@
                     <div class="row justify-content-center">
                         <div class="col-11 col-lg-8">
                             <h3>Music</h3>
-                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                            <p style="text-align:center">Penampilan dari para talent yang membawakan permainan berbagai
+                                macam instrumen
+                                yang menghasilkan suara suara yang dapat dinikmati oleh penonton</p>
                         </div>
                     </div>
                 </a>
@@ -37,9 +37,10 @@
                     <div class="row justify-content-center">
                         <div class="col-11 col-lg-8">
                             <h3>Drama</h3>
-                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                            <p style="text-align:center">Pertunjukan sandiwara yang mengangkat berbagai macam tema,
+                                alur, cerita yang dihadirkan
+                                secara maksimal untuk memenuhi keinginan penonton dan menjadi tontonan yang menghibur
+                                banyak kalangan</p>
                         </div>
                     </div>
                 </a>
@@ -49,9 +50,11 @@
                     <div class="row justify-content-center">
                         <div class="col-11 col-lg-8">
                             <h3>Dance</h3>
-                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                            <p style="text-align:center">Bergerak, Dinamis, Energik membuat penonton terpukau atas
+                                keindahann gerakan yang
+                                dibawakan. Dari Groovy style hingga tari tradisional selalu siap untuk mengisi event
+                                yang
+                                anda miliki</p>
                         </div>
                     </div>
                 </a>
@@ -61,9 +64,9 @@
                     <div class="row justify-content-center">
                         <div class="col-11 col-lg-8">
                             <h3>Mix Art</h3>
-                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                                ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                                Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                            <p style="text-align:center">Percampuran apik dari kombinasi atas tiga kategori lainnya
+                                serta kategori lain yang tidak tertera di sebelah. Memukau penonton merupakan hasil
+                                akhir yang didapatkan atas percampuran seni pertunjukan yang indah</p>
                         </div>
                     </div>
                 </a>
