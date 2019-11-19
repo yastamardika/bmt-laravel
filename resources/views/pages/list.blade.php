@@ -11,7 +11,7 @@
         <div class="row">
 
             <div class="col-lg-4 col-md-6">
-                <div class="speaker"><a href="/category/list/detail/{{ $p->id }}">
+                <div class="speaker"><a href="/category/list/detail/{{ $p->id }}" target="_blank">
                     <img src="{{ url('/data_file/'.$p->foto) }}" alt="Speaker 1" class="img-fluid"></a>
                     <div class="details">
 
@@ -25,10 +25,10 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <h3><a href="/category/list/detail/{{ $p->id }}">{{ $p->nama_artist }}</a></h3>
+                <h3><a href="/category/list/detail/{{ $p->id }}" target="_blank">{{ $p->nama_artist }}</a></h3>
                 <p>{{ $p->kategori }}</p>
                 <p>{{ Str::limit($p->deskripsi,100,'...') }}</p>
-                <a href="/category/list/detail/{{ $p->id }}">Read More</a>
+                <a href="/category/list/detail/{{ $p->id }}" target="_blank">Read More</a>
             </div>
 
 

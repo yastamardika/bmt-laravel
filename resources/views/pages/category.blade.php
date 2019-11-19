@@ -5,9 +5,8 @@
     <div class="intro-container wow fadeIn">
         <h1 class="mb-4 pb-0 text-light">All kind of <br><span> Art</span> <br>
             performed by Locals</h1>
-        <p class="mb-4 pb-0" style="color:#DBA053">10-12 December, Downtown Conference Center, New York</p>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-            data-autoplay="true"></a>
+        {{-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a> --}}
         <a href="#about" class="about-btn scrollto">Discover More</a>
     </div>
 </section>
@@ -58,7 +57,7 @@
                 </a>
             </div>
             <div class="col-lg-6 venue-info" style=" background: url('../img/fdc0.png');">
-                <a href="/category/mixart">
+                <a href="/category/Mix Art">
                     <div class="row justify-content-center">
                         <div class="col-11 col-lg-8">
                             <h3>Mix Art</h3>

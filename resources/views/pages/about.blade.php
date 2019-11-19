@@ -18,8 +18,7 @@
                 <ul id="faq-list">
 
                     <li>
-                        <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at
-                            lectus urna duis? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" class="collapsed" href="#faq1">Apa itu bookmytalent? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq1" class="collapse" data-parent="#faq-list">
                             <p>
                                 Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
@@ -30,8 +29,7 @@
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius
-                            morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq2" class="collapsed">Apa manfaat dari website ini? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq2" class="collapse" data-parent="#faq-list">
                             <p>
                                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
@@ -43,8 +41,7 @@
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur
-                            adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq3" class="collapsed">Bagaimana cara memesan talent yang ada di website ini? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq3" class="collapse" data-parent="#faq-list">
                             <p>
                                 Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
@@ -56,8 +53,8 @@
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus.
-                            Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq4" class="collapsed">Berapa harga yang dimiliki talent yang pengguna pilih?
+                             <i class="fa fa-minus-circle"></i></a>
                         <div id="faq4" class="collapse" data-parent="#faq-list">
                             <p>
                                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
@@ -69,8 +66,8 @@
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec
-                            nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq5" class="collapsed">Jenis acara apa saja yang dapat menyewa talent dari website ini?
+                            <i class="fa fa-minus-circle"></i></a>
                         <div id="faq5" class="collapse" data-parent="#faq-list">
                             <p>
                                 Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
@@ -82,8 +79,7 @@
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus
-                            ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
+                        <a data-toggle="collapse" href="#faq6" class="collapsed">Bagaimana cara pengguna dapat mengetahui rekam jejak talent yang akan pengguna sewa? <i
                                 class="fa fa-minus-circle"></i></a>
                         <div id="faq6" class="collapse" data-parent="#faq-list">
                             <p>

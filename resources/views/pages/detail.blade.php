@@ -3,9 +3,9 @@
 
 @foreach ($artist as $p)
 <section id="intro">
-    <div class="intro-container wow fadeIn">
+    <div class="intro-container wow fadeIn" style="background-image:{{ url('/data_file/'.$p->foto) }}">
         <h1 class="mb-4 pb-0">{{ $p->nama_artist }}</h1>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+        <a href="https://www.youtube.com/watch?v=Su_Z95pScc8" class="venobox play-btn mb-4" data-vbtype="video"
             data-autoplay="true"></a>
         <a href="#speakers" class="about-btn scrollto">Discover More</a>
     </div>
@@ -77,11 +77,11 @@
                             style="width:100%;height:100%"></a>
                 </div>
                 <div class="col-lg-3 col-md-6 "style="padding: 5% ">
-                    <a href="/"><img src="https://image.flaticon.com/icons/svg/733/733585.svg" alt="TheEvenet"
+                    <a href="https://wa.me/62895368424403" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733585.svg" alt="TheEvenet"
                             style="width:100%;height:100%"></a>
                 </div>
                 <div class="col-lg-3 col-md-6 "style="padding: 5% ">
-                    <a href="/"><img src="https://image.flaticon.com/icons/svg/174/174855.svg" alt="TheEvenet"
+                    <a href="https://www.instagram.com/flownesia/" target="_blank"><img src="https://image.flaticon.com/icons/svg/174/174855.svg" alt="TheEvenet"
                             style="width:100%;height:100%"></a>
                 </div>
                 <div class="col-lg-3 col-md-6 "style="padding: 5% ">

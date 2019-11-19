@@ -12,7 +12,7 @@ class InputController extends Controller
     public function index()
     {
         if(Auth::check()){
-            $artist = Talent::paginate(10);
+            $artist = Talent::get();
             return view('index', ['artist' => $artist]);
         } else {
             return redirect()->action('HomeController@index');

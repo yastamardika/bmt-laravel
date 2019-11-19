@@ -5,9 +5,9 @@
         <h2 style="color:#FFFFFF"><b>Book Now!</b></h2>
         <br>
         @foreach($artist2 as $data)
-        <h6 style="line-height:0.001px"><b>{{ $data->kategori }}</b></h6>
+        <h6 style="line-height:0.001px"><a href=""><b>{{ $data->kategori }}</b></a></h6>
         <hr style="border:0.3px solid #FFFFFF">
-        <h6 style="color:#FFFFFF"><b>{{ $data->nama_artist }}</b></h6>
+        <h6 style="color:#FFFFFF"><b><a href="/category/list/detail/{{ $data->id }}" style="color:white">{{ $data->nama_artist }}</b></a></h6>
         <h6 style="color:#FFFFFF">{{ $data->deskripsi }}</h6>
         <br>
         @endforeach
