@@ -1,6 +1,7 @@
 @extends('layouts.front')
 @section('konten')
 <section id="intro">
+    <i class="fas fa-chevron-left">cc</i>
     <div class="intro-container wow fadeIn">
         <h1 class="mb-4 pb-0 text-light">All kind of <br><span> Art</span> <br>
             performed by Locals</h1>

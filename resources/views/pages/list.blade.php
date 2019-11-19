@@ -27,7 +27,8 @@
             <div class="col-lg-4 col-md-6">
                 <h3><a href="/category/list/detail/{{ $p->id }}">{{ $p->nama_artist }}</a></h3>
                 <p>{{ $p->kategori }}</p>
-                <p>{{ $p->deskripsi }}</p>
+                <p>{{ Str::limit($p->deskripsi,100,'...') }}</p>
+                <a href="/category/list/detail/{{ $p->id }}">Read More</a>
             </div>
 
 
