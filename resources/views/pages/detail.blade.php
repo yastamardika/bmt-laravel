@@ -4,7 +4,7 @@
 @foreach ($artist as $p)
 <section id="intro" style="background: url('{{ url('/data_file/'.$p->foto) }}') !important; background-size:cover !important; height:100vh;">
     <div class="intro-container wow fadeIn">
-        <h1 class="mb-4 pb-0">{{ $p->nama_artist }}</h1>
+        <h1 class="mb-4 pb-0" style="text-shadow: 1px 1px 2px black;">{{ $p->nama_artist }}</h1>
         <a href="https://www.youtube.com/watch?v=Su_Z95pScc8" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
         <a href="#speakers" class="about-btn scrollto">Discover More</a>
     </div>
@@ -78,7 +78,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 " style="padding: 5% ">
-                    <a href="/"><img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="TheEvenet" style="width:100%;height:100%"></a>
+                    <a href="https://www.youtube.com/watch?v=TvYRouUj2Qs" target="_blank"><img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="TheEvenet" style="width:100%;height:100%"></a>
                 </div>
                 <div class="col-lg-3 col-md-6 "style="padding: 5% ">
                     <a href="https://wa.me/62895368424403" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733585.svg" alt="TheEvenet"

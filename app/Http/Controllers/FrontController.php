@@ -11,8 +11,8 @@ class FrontController extends Controller
 {
     public function utama()
     {
-        $artist = DB::table('artist')->limit(6)->get();
-        $artist2 = DB::table('artist')->limit(2)->get();
+        $artist = DB::table('artist')->limit(6)->latest()->get();
+        $artist2 = DB::table('artist')->limit(2)->latest()->get();
 
         return view('pages.main', ['artist' => $artist,'artist2' => $artist2]);
     }
