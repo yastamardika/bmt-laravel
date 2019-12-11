@@ -17,7 +17,7 @@
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li><a href="/#intro">Home</a></li>
-                    <li><a href="/category">Categories</a></li>
+                    <li><a href="/category">Discovery</a></li>
                     <li><a href="/about">FaQ</a></li>
                     <li class="buy-tickets"><a href="/addyourtalent#contact">Upload Your Talent</a></li>
                 </ul>
