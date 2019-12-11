@@ -27,7 +27,7 @@ class FrontController extends Controller
     public function listCategory($id){
         $artist = DB::table('artist')->where('kategori',$id)->paginate(10);
         $trunc = Str::limit($artist['deskripsi'],20);
-        // $newArr = Arr::add($artist,'desc',$trunc);
+        
         return view('pages.list', ['artist' => $artist, 'kategori'=>$id ,'deskripsi'=>$trunc]);
     }
 
