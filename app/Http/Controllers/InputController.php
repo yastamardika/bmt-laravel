@@ -11,11 +11,11 @@ class InputController extends Controller
 {
     public function index()
     {
-        if(Auth::check()){
+        if(Auth::user()->admin == 1){
             $artist = Talent::get();
             return view('index', ['artist' => $artist]);
         } else {
-            return redirect()->action('HomeController@index');
+            return redirect()->action('FrontController@utama');
         }
     }
 
@@ -74,5 +74,17 @@ class InputController extends Controller
         if(!Auth::check()){
             return redirect()->action('HomeController@index');
         }
+    }
+
+    public function updatedata(Request $request){
+        Talent::where('id',$request->id)->update([
+            'nama_artist' => $request->nama,
+            'kategori' => $request->kategori,
+            'nama_owner' => $request->owner,
+            'deskripsi' => $request->deskripsi,
+            'nomor_telepon' => $request->handphone,
+            'alamat' => $request->alamat,
+        ]);
+        return redirect('/input');
     }
 }

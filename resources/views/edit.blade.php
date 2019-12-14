@@ -50,16 +50,62 @@
     <br />
 
     @foreach($artist as $p)
-    <form action="/pegawai/update" method="post">
+    <form action="/input/edit/update" method="post">
         {{ csrf_field() }}
-        Nama <input type="text" name="nama" required="required" value="{{ $p->nama_artist }}"> <br />
-        Kategori <input type="text" name="kategori" required="required" value="{{ $p->kategori }}"> <br />
-        Owner <input type="text" name="owner" required="required" value="{{ $p->nama_owner }}"> <br />
-        Deskripsi <textarea type="text" name="deskripsi" required="required"
-            value="{{ $p->deskripsi }}"> </textarea><br />
-        Nomor Telepon <input type="text" name="handphone" required="required" value="{{ $p->nomor_telepon }}"> <br />
-        Alamat <textarea name="alamat" required="required" value="{{ $p->alamat }}"></textarea> <br />
-        <input type="submit" value="Simpan Data">
+        <input type="hidden"  name="id" value="{{ $p->id }}">
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label" >Nama Group </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="nama" required="required" value="{{ $p->nama_artist }}"> <br />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="sel1" class="col-sm-2 col-form-label">Kategori</label>
+            <div class="col-sm-10">
+                <select class="custom-select mr-sm-2" name="kategori" required="required"
+                    id="inlineFormCustomSelect">
+                    <option selected>{{ $p->kategori }}</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Music">Music</option>
+                    <option value="Dance">Dance</option>
+                    <option value="Mix Art">Mix Art</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Ketua/Owner</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="owner" required="required" value="{{ $p->nama_owner }}"> <br />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Deskripsi</label>
+            <div class="col-sm-10">
+                <textarea name="deskripsi" class="form-control" required="required">{{ $p->deskripsi }}</textarea> <br />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nomor Telepon</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" name="handphone" required="required" maxlength="15" value="{{ $p->nomor_telepon }}">
+                <br />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Alamat</label>
+            <div class="col-sm-10">
+                <textarea name="alamat" class="form-control" required="required">{{ $p->alamat }}</textarea> <br />
+            </div>
+        </div>
+        {{-- <div class="form-group">
+            <label for="exampleFormControlFile1">Foto</label>
+            <input type="file" class="form-control-file" name="foto" id="exampleFormControlFile1">
+        </div> --}}
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="submit" class="btn btn-primary" value="Simpan Data">
+            </div>
+        </div>
     </form>
     @endforeach
 

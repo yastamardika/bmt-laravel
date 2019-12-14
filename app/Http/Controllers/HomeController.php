@@ -24,10 +24,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(Auth::check()){
+        if(Auth::user()->admin == 0){
             return redirect()->action('InputController@index');
         } else {
+            $users['users'] = \App\User::all();
             return view('index');
         }
+    }
+
+    public function logout(){
+        Auth::logout();
+
+        return redirect('/');
     }
 }

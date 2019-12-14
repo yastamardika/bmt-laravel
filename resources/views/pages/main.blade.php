@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('konten')
-<section id="" style="background:url('/img/image2.png'); background-size:cover;height:450px; margin-top:75px">
+<section id="" style="background:url('/img/image2.png'); background-size:cover;height:100%; margin-top:75px">
     <div id="" class="col-lg-6 col-md-6 offset-md-6 offset-lg-6" style="background:rgba(30, 30, 30, 0.72);padding:24px; height:100%">
         <h2 style="color:#FFFFFF"><b>Book Now!</b></h2>
         <br>
@@ -8,7 +8,7 @@
         <h6 style="line-height:0.001px"><a href=""><b>{{ $data->kategori }}</b></a></h6>
         <hr style="border:0.3px solid #FFFFFF">
         <h6 style="color:#FFFFFF"><b><a href="/category/list/detail/{{ $data->id }}" style="color:white">{{ $data->nama_artist }}</b></a></h6>
-        <h6 style="color:#FFFFFF">{{ $data->deskripsi }}</h6>
+        <h6 style="color:#FFFFFF">{{ Str::limit($data->deskripsi,300,'...') }}</h6>
         <br>
         @endforeach
     </div>
